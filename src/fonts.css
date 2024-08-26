@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "IBM-Regular"; /* <== On donne un nom unique */
+  src: url("./fonts/IBMPlexSans.eot") format("embedded-opentype"),
+    /* <== On donne l'emplacement du fichier de police et on précise le format pour être sûr que le navigateur ne se trompe pas en le devinant à partir de l'extension du fichier */
+      url("./fonts/IBMPlexSans.woff2") format("woff2"),
+    url("./fonts/IBMPlexSans.woff") format("woff"),
+    url("./fonts/IBMPlexSans.ttf") format("truetype"),
+    url("./fonts/IBMPlexSans.svg") format("svg");
+  font-weight: normal; /* <== On définit le poids de la police */
+  font-style: normal; /* <== On définit le style de la police */
+  font-display: swap; /* <== On spécifie le comportement d'affichage de la police. Ca indique que le navigateur doit afficher une police de secours immédiatement, puis charger la police personnalisée en arrière-plan. */
+}
+
+@font-face {
+  font-family: "IBM-Bold";
+  src: url("./fonts/IBMPlexSans-Bold.eot") format("embedded-opentype"),
+    url("./fonts/IBMPlexSans-Bold.woff2") format("woff2"),
+    url("./fonts/IBMPlexSans-Bold.woff") format("woff"),
+    url("./fonts/IBMPlexSans-Bold.ttf") format("truetype"),
+    url("./fonts/IBMPlexSans-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Stratos";
+  src: url("./fonts/StratosDeliverooWeb-SemiBold.eot")
+      format("embedded-opentype"),
+    url("./fonts/StratosDeliverooWeb-SemiBold.woff2") format("woff2"),
+    url("./fonts/StratosDeliverooWeb-SemiBold.woff") format("woff"),
+    url("./fonts/StratosDeliverooWeb-SemiBold.ttf") format("truetype"),
+    url("./fonts/StratosDeliverooWeb-SemiBold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
