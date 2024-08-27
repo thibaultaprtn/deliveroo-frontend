@@ -3,7 +3,7 @@ import "./App.css";
 import axios from "axios";
 import Page from "./components/Page";
 
-let strrequestlocal = "http://localhost:3000/";
+// let strrequestlocal = "http://localhost:3000/";
 let strrequestprod = "https://site--deliveroo-backend--jwp52j9xkmxc.code.run/";
 
 // const apiDataRetrieving = async () => {
@@ -26,9 +26,13 @@ function App() {
 
   useEffect(() => {
     const retrieveData = async () => {
-      const tab = await axios.get(strrequestprod);
-      setData(tab);
-      setIsLoading(false);
+      try {
+        const tab = await axios.get(strrequestprod);
+        setData(tab);
+        setIsLoading(false);
+      } catch (error) {
+        console.log(error);
+      }
     };
 
     retrieveData();
